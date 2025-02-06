@@ -89,6 +89,7 @@ header{
 
 }
 
+/* seraching button */
 .search input{
     width: 100%;
 }
@@ -103,6 +104,7 @@ header{
     text-decoration: none;
 }
 
+/* CONTENT AREA IN INDEX.HTML (FILTERS, ITEMS(articles)) */
 .content{
     display:flex;
     justify-content: center;
@@ -116,6 +118,79 @@ header{
     grid-template-columns: 300px;
     justify-content: center;
 }
+
+.article figure{
+    margin: 0 auto;
+}
+
+.article .title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.article .description{
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* filters side css */
+.filters{
+display: none;
+flex-direction: column;
+border-radius: 10px;
+width: 300px;
+padding: 0 20px;
+}
+
+/* css rules in details.html  */
+.details{
+    width: 100%;
+    max-width:1000px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: 250px auto 50px;
+
+    grid-template-areas: "image"
+    "details"
+    "button";
+    gap: 10px;
+}
+
+.thumbnails1Site, .thumbnails2Site, .thumbnails3Site, .thumbnails4Site{
+    display:none;
+}
+
+.previewSite{
+    grid-area: image;
+}
+
+.previewSite img{
+    width: 100%;
+}
+
+.detailSite{
+    grid-area:details;
+    text-align: justify;
+}
+
+.saveSite{
+    grid-area: button;
+    background: #F24236 ;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* FOOTER */
+.footer{
+    text-align: center;
+}
+
+
+
+
 
 
 
@@ -179,8 +254,62 @@ h1{
 
 
 
+}
 
 
 
 
+@media screen and (min-width:1000px){
+
+    /* css rules for details.html (details area) page */
+    .details{
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto 0 auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 150px) 300px;
+        grid-template-rows: 400px 100px 50 px;
+
+        grid-template-areas: "image image image image details"
+        "img1 img2 img3 img4 details"
+        "button button button button details";
+        gap:10px;
+    }
+/* img thumbnails */
+    .thumbnails{
+        width:90%;
+        display: block;
+        margin: auto;
+        opacity: .8;
+    }
+
+    .thumbnails1Site, .thumbnails2Site, .thumbnails3Site, .thumbnails4Site{
+        display:block;
+    }
+
+    .thumbnails1Site{
+        grid-area: img1;
+    }
+
+    .thumbnails2Site{
+        grid-area: img2;
+    }
+
+    .thumbnails3Site{
+        grid-area: img3;
+    }
+
+    .thumbnails4Site{
+        grid-area: img4;
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+    .items{
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, auto);
+    }
 }
