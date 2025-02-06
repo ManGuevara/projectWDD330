@@ -1,3 +1,186 @@
+/*global styles*/
 *{
-    font-family: :"Poppins";
+    font-family: "Poppins", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/*GENERAL CONTAINER OF THE PAGE, it is unside body INDEX CSS*/
+
+.container{
+    position: relative;
+    overflow:hidden;
+}
+
+
+/*HEADER INDEX CSS*/
+h1{
+    font-size: 1.6rem;
+}
+
+.logoA {
+    margin-right: 10px;
+}
+
+.logoB{
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items:center;
+}
+
+/* HEADER: FIGURE AND NAV*/
+
+.top{
+    display: flex;
+    width:100%;
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*hamburger buttom*/
+.menu{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* nav rules for small size view*/
+
+ .nav{
+    position: absolute;
+    right: -500px;
+    width: 100%;
+    max-width:500px;
+    height:100%;
+    background: #2E86ABdd;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    text-indent: 20px;
+    font-weight: 500;
+
+    transition: transform .3s ease-in;
+    will-change: transform;
+} 
+
+/* showing the nav with a class */
+
+/* .nav--show{
+    position: abosulute;
+    right: -500px;
+    transform: translatex(-500px);
+} */
+
+.search{
+    display: flex;
+    width:100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.search input{
+    width: 100%;
+}
+
+.search>a{
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #2E86AB ;
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto 0 auto;
+}
+
+.items{
+    display:grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query rules for medium size (min-width: 650px)*/
+@media screen and (min-width:650px){
+/*HEADER*/
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.logoA{
+    display: none;
+}
+
+.logoB{
+    display: block !important;
+}
+
+.menu{
+    display: none !important;
+}
+
+.nav{
+    position: relative;
+    left:0;
+    transform: translatex(0);
+    width: 500px;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    text-indent: 0;
+
+    transition: none;
+    will-change: none;
+    justify-content:space-around;
+    align-items:center;
+}
+.nav a{
+    text-decoration: none;
+    color:#2E86AB; 
+}
+
+.items{
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+
+
+
+
+
 }
