@@ -75,11 +75,20 @@ header{
 
 /* showing the nav with a class */
 
-/* .nav--show{
+ .nav--show{
     position: abosulute;
     right: -500px;
     transform: translatex(-500px);
-} */
+} 
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 .search{
     display: flex;
@@ -191,19 +200,6 @@ padding: 0 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*media query rules for medium size (min-width: 650px)*/
 @media screen and (min-width:650px){
 /*HEADER*/
@@ -250,9 +246,6 @@ h1{
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, auto);
 }
-
-
-
 
 }
 
