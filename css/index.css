@@ -76,7 +76,7 @@ header{
 /* showing the nav with a class */
 
  .nav--show{
-    position: abosulute;
+    position: absolute;
     right: -500px;
     transform: translatex(-500px);
 } 
@@ -172,11 +172,11 @@ padding: 0 20px;
 }
 
 .previewSite{
-    grid-area: image;
+  grid-area: image;
 }
 
 .previewSite img{
-    width: 100%;
+    width: 100%;  
 }
 
 .detailSite{
@@ -233,7 +233,7 @@ h1{
     text-indent: 0;
 
     transition: none;
-    will-change: none;
+    will-change: none; 
     justify-content:space-around;
     align-items:center;
 }
@@ -262,7 +262,7 @@ h1{
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(4, 150px) 300px;
-        grid-template-rows: 400px 100px 50 px;
+        grid-template-rows: 400px 100px 50px;
 
         grid-template-areas: "image image image image details"
         "img1 img2 img3 img4 details"
