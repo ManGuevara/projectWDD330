@@ -5,13 +5,16 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourist Explore</title>
-    
+
 </head>
 
 <body>
@@ -58,74 +61,18 @@
             </div>
 
             <div class="items">
-                <article class="article">
-                    <figure>
-                        <a href="details.html"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyERqvrDxFzolln5B3RgC_Zof6ri1Q4zN0cg&s"
-                                alt="madrid"></a>
-                    </figure>
-                    <p class="title"><strong>Madrid</strong></p>
-                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
-                        aliquam necessitatibus voluptatum tenetur eveniet aperiam eligendi, tempore quam nobis nesciunt
-                        cum aut ut voluptatem sit beatae molestiae odit vero!</p>
-                    <a href="details.html">See more</a>
-                </article>
-
-                <article class="article">
-                    <figure>
-                        <a href="details.html"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyERqvrDxFzolln5B3RgC_Zof6ri1Q4zN0cg&s"
-                                alt="madrid"></a>
-                    </figure>
-                    <p class="title"><strong>Madrid</strong></p>
-                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
-                        aliquam necessitatibus voluptatum tenetur eveniet aperiam eligendi, tempore quam nobis nesciunt
-                        cum aut ut voluptatem sit beatae molestiae odit vero!</p>
-                    <a href="details.html">See more</a>
-                </article>
-
-
-
-                <article class="article">
-                    <figure>
-                        <a href="details.html"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyERqvrDxFzolln5B3RgC_Zof6ri1Q4zN0cg&s"
-                                alt="madrid"></a>
-                    </figure>
-                    <p class="title"><strong>Madrid</strong></p>
-                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
-                        aliquam necessitatibus voluptatum tenetur eveniet aperiam eligendi, tempore quam nobis nesciunt
-                        cum aut ut voluptatem sit beatae molestiae odit vero!</p>
-                    <a href="details.html">See more</a>
-                </article>
-
-
-                <article class="article">
-                    <figure>
-                        <a href="details.html"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyERqvrDxFzolln5B3RgC_Zof6ri1Q4zN0cg&s"
-                                alt="madrid"></a>
-                    </figure>
-                    <p class="title"><strong>Madrid</strong></p>
-                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
-                        aliquam necessitatibus voluptatum tenetur eveniet aperiam eligendi, tempore quam nobis nesciunt
-                        cum aut ut voluptatem sit beatae molestiae odit vero!</p>
-                    <a href="details.html">See more</a>
-                </article>
-
-
-                <article class="article">
-                    <figure>
-                        <a href="details.html"> <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyERqvrDxFzolln5B3RgC_Zof6ri1Q4zN0cg&s"
-                                alt="madrid"></a>
-                    </figure>
-                    <p class="title"><strong>Madrid</strong></p>
-                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio itaque
-                        aliquam necessitatibus voluptatum tenetur eveniet aperiam eligendi, tempore quam nobis nesciunt
-                        cum aut ut voluptatem sit beatae molestiae odit vero!</p>
-                    <a href="details.html">See more</a>
-                </article>
+                <template>
+                    <article class="article">
+                        <figure>
+                            <a href="details.html">
+                                <img id="thumbnails" src="">
+                            </a>
+                        </figure>
+                        <p class="title"><strong></strong></p>
+                        <p class="description"></p>
+                        <a href="details.html"></a>
+                    </article>
+                </template>
 
             </div>
 
@@ -138,6 +85,9 @@
 
     </div>
     <script src="/js/index.js"></script>
-
+    <script>
+        loadPlace()
+    </script>
 </body>
+
 </html>
