@@ -12,6 +12,11 @@ function obj(name, matriz=false){
 const menuIcon= obj("menuIcon");
 const menu = obj("nav");
 
+
+
+
+
+
 // assigning a "click event" listner to the menu icon
 
 menuIcon.addEventListener("click", (e)=>{
